@@ -32,7 +32,7 @@ const teamSelect = {
     container: document.getElementById('team-custom-select'),
     trigger: document.getElementById('team-trigger'),
     options: document.getElementById('team-options'),
-    currentValue: 'https://i.ibb.co.com/Y7ybwrCZ/Kazi-Hussain.jpg',
+    currentValue: 'https://i.ibb.co.com/9khPTM8K/Kazi-Hussain.jpg',
     currentName: 'Kaji Hussain'
 };
 
