@@ -32,8 +32,8 @@ const teamSelect = {
     container: document.getElementById('team-custom-select'),
     trigger: document.getElementById('team-trigger'),
     options: document.getElementById('team-options'),
-    currentValue: 'https://i.ibb.co.com/9khPTM8K/Kazi-Hussain.jpg',
-    currentName: 'Kaji Hussain'
+    currentValue: 'https://raw.githubusercontent.com/bytewhisker/emailsig/main/Kazi%20Hussain%20.jpg',
+    currentName: 'Kazi Hussain'
 };
 
 // --- Custom Select Handling ---
@@ -114,7 +114,7 @@ function generateSignatureHTML() {
                     ${inputs.checkDesc.checked ? `<div style="font-family:Outfit,Arial,sans-serif;font-size:10px;font-weight:400;color:#aaaaaa;text-transform:uppercase;letter-spacing:1.2px;margin:0;">${inputs.desc.value}</div>` : ''}
                 </td>
                 <td width="94" valign="middle" align="right">
-                    <img src="https://i.ibb.co.com/qLJfy4qt/KMG-New-Logo.png" width="82" alt="Logo" style="display:block;border:0;">
+                    <img src="https://raw.githubusercontent.com/bytewhisker/emailsig/main/KMG%20New%20Logo.png" width="82" alt="Logo" style="display:block;border:0;">
                 </td>
             </tr>
         </table>
