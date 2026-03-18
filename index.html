@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Signature Studio | KMG Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Editor -->
+    <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>KMG Signature Studio</h1>
+                <p>Customize your professional signature instantly.</p>
+            </div>
+
+            <!-- Global Team Selector -->
+            <div class="team-selector-global">
+                <label>Select Team Member</label>
+                <div class="custom-select" id="team-custom-select">
+                    <div class="select-trigger" id="team-trigger">
+                        <img src="https://i.ibb.co.com/Y7ybwrCZ/Kazi-Hussain.jpg" alt="Current" class="avatar-sm">
+                        <span>Kaji Hussain</span>
+                    </div>
+                    <div class="select-options" id="team-options">
+                        <div class="option selected" data-value="https://i.ibb.co.com/Y7ybwrCZ/Kazi-Hussain.jpg" data-title="CEO · Kazi Marketing Group">Kaji Hussain</div>
+                        <div class="option" data-value="https://i.ibb.co.com/ZzKh1JS7/Monam-Mahedi.png" data-title="Creative Director/Tech Engineer">Monam Mahedi</div>
+                        <div class="option" data-value="https://i.ibb.co.com/p6y6mX10/Tanvir-Alam-Hira.png" data-title="CDO">Tanvir Alam Hira</div>
+                        <div class="option" data-value="https://i.ibb.co.com/DgRvPwG1/Sohel-Mia.png" data-title="Website Developer">Sohel Mia</div>
+                        <div class="option" data-value="https://i.ibb.co.com/TM0zjmgQ/Mahbub-Khandaker.png" data-title="Full Stack Engineer">Mahbub Khandaker</div>
+                        <div class="option" data-value="https://i.ibb.co.com/nNcBXQnv/Jui-Hussain.png" data-title="Customer Success">Jui Hussain</div>
+                        <div class="option" data-value="https://img.icons8.com/ios-glyphs/160/111111/user-male-circle.png" data-title="Operations Manager">Monica</div>
+                        <div class="option" data-value="https://i.ibb.co.com/KxQWgtYd/Muhin-Hussain.png" data-title="Operations Team">Muhin Hussain</div>
+                        <div class="option" data-value="https://i.ibb.co.com/0pWS3k4z/Hussain.png" data-title="Marketing Team">Hussain</div>
+                        <div class="option" data-value="https://i.ibb.co.com/B5h2k0sD/Al-Megdad.png" data-title="Technical Team">Al-Megdad</div>
+                        <div class="option" data-value="https://i.ibb.co.com/ycSb4qSR/Javed-Laher.png" data-title="Support Team">Javed Laher</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Navigation -->
+            <div class="tab-nav">
+                <button class="tab-btn active" data-tab="personal">Profile</button>
+                <button class="tab-btn" data-tab="contact">Contact</button>
+                <button class="tab-btn" data-tab="design">Footer</button>
+            </div>
+
+            <div class="tab-content">
+                <!-- Profile Section -->
+                <div class="tab-pane active" id="tab-personal">
+                    <h2>Brand & Profile</h2>
+                    <div class="form-group">
+                        <label for="input-name">Full Name</label>
+                        <input type="text" id="input-name" value="Kaji Hussain" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-role">Title & Company</label>
+                        <input type="text" id="input-role" value="CEO · Kazi Marketing Group" placeholder="Title & Company">
+                    </div>
+                    <div class="form-group flex-row">
+                        <label for="input-desc">Marketing Descriptor</label>
+                        <label class="switch"><input type="checkbox" id="check-desc" checked><span class="slider"></span></label>
+                    </div>
+                    <input type="text" id="input-desc" value="Built To Drive Growth" placeholder="Descriptor">
+                </div>
+
+                <!-- Contact Section -->
+                <div class="tab-pane" id="tab-contact">
+                    <h2>Contact Access</h2>
+                    <div class="form-group">
+                        <label for="input-phone">Phone Number</label>
+                        <input type="text" id="input-phone" value="07931 762049" placeholder="Phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-email">Email Address</label>
+                        <input type="email" id="input-email" value="kaji.hussain@kazimarketinggroup.co.uk" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-website">Website Text</label>
+                        <input type="text" id="input-website" value="kazimarketinggroup.co.uk" placeholder="Website Text">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-web-url">Website Link</label>
+                        <input type="text" id="input-web-url" value="https://www.kazimarketinggroup.co.uk" placeholder="Website Link">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-location">Location</label>
+                        <input type="text" id="input-location" value="London / Birmingham" placeholder="Location">
+                    </div>
+                    <div class="form-group flex-row">
+                        <label for="input-linkedin">LinkedIn URL</label>
+                        <label class="switch"><input type="checkbox" id="check-linkedin" checked><span class="slider"></span></label>
+                    </div>
+                    <input type="text" id="input-linkedin" value="https://www.linkedin.com/company/kazimarketinggroup" placeholder="LinkedIn URL">
+                </div>
+
+                <!-- Footer Section -->
+                <div class="tab-pane" id="tab-design">
+                    <h2>Footers & Notices</h2>
+                    <div class="form-group">
+                        <label for="input-flex">Flexible Work Statement</label>
+                        <textarea id="input-flex">I choose to work flexibly and may send emails outside normal office hours. No need to respond outside yours.</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-confidential">Confidentiality Notice</label>
+                        <textarea id="input-confidential">The content of this email is confidential and intended only for the named recipient. It is strictly forbidden to share any part of this message without written consent. If received in error, please reply and delete it.</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-footer-company">Footer Brand Name</label>
+                        <input type="text" id="input-footer-company" value="Kazi Marketing Group">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-footer-url">Footer Website Display</label>
+                        <input type="text" id="input-footer-url" value="kazimarketinggroup.co.uk">
+                    </div>
+                </div>
+            </div>
+
+            <footer style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid #f1f5f9; text-align: center;">
+                <p style="font-family: 'Outfit', sans-serif; font-size: 0.7rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05rem;">Developed by Md Mahadi</p>
+            </footer>
+        </aside>
+
+        <main class="main-content">
+            <div class="workspace-header">
+                <div class="workspace-title-group">
+                    <span class="preview-label">Editor Workspace</span>
+                    <h2>KMG Signature Designer</h2>
+                </div>
+                <div class="actions">
+                    <button id="view-code-btn" class="btn btn-outline">
+                        <img src="https://img.icons8.com/ios-glyphs/16/000000/code.png" width="14" height="14">
+                        Toggle Code
+                    </button>
+                    <button id="copy-btn" class="btn btn-primary tooltip">
+                        Copy HTML
+                        <span class="tooltiptext">Copied!</span>
+                    </button>
+                    <button id="download-btn" class="btn btn-outline">Download</button>
+                </div>
+            </div>
+
+            <div class="workspace-viewport">
+                <div class="preview-card" id="preview-area">
+                    <!-- Signature generated here -->
+                </div>
+
+                <div class="code-container" id="code-wrapper" style="display: none;">
+                    <div class="code-header">
+                        <div class="code-title">Source Fragment</div>
+                    </div>
+                    <code id="code-output"></code>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Script Import -->
+    <script src="script.js"></script>
+</body>
+</html>
